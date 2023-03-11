@@ -1,1 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+    background-color: lightblue;
+}
+
+/* Nav Bar */
+header {
+    width: 100%;
+    height: 45px;
+    background-color: navy;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header li {
+    cursor: pointer;
+    list-style: none;
+    color: lightgrey;
+}
+
+.logo {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.name ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bar ul{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name li{
+    font-size: 20px;
+}
+
+.bar li{
+    margin-right: 120px;
+}
+
+/* Main*/
+
+.main{
+    width: 100%;
+    height: 30%;
+    border-bottom: 3px solid black;
+}
+
+.main img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 700px;
+    width: 100%;
+    padding: 70px;
+}
+
+.wrap {
+    background-color: navy;
+    margin: -70px 70px 0;
+    height: auto;
+    padding: 5px;
+}
+
+.blurb {
+    text-align: center;
+    color: white;
+}
+
+button {
+    display: block;
+    width: 100px;
+    align-items: center;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 18px;
+    background-color: white;
+    border-radius: 5%;
+    border: 1px black;
+}
+
+/*Events*/
+.events {
+    width: 100%;
+    border-bottom: 3px solid black;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+    padding: 0 70px;
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+}
+
+h1{
+    text-align: center;
+    padding: 40px 0;
+}
+
+.event-name {
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.column p {
+    background-color: navy;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+.column li {
+    padding: 20px;
+    font-size: 16px;
+    color: white;
+}
+
+.column ul {
+    background-color: black;
+}
+
+.section {
+    font-size: 20px;
+    height: 80px;
+    background-color: navy;
+}
+
+.section p {
+    text-align: center;
+    background-color: navy;
+}
+
+
+.column a {
+    text-align: center;
+    display: block;
+    font-size: 18px;
+    color: white;
+    background-color: black;
+    padding: 0 0 10px;
+}
+
+.form {
+    margin-top: 20px;
+    background-color: navy;
+    text-decoration: underline;
+    color: white;
+    text-align: center;
+    height: 187px;
+    padding: 20px;
+}
+
+.form p {
+    background-color: navy;
+    margin-bottom: 20px;
+}
+
+label {
+    color: white;
+}
+
+form {
+    display: inline-block;
+}
+
+form input {
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+/* Publications */
+.publications {
+    width: 100%;
+}
+
+.row-p {
+    display: flex;
+}
+
+.column-p {
+    flex: 50%;
+    padding: 0 70px;
+}
+
+.column-p img{
+    float: left;
+    margin-right: 10px;
+}
+
+.text {
+    background-color: navy;
+    color: white;
+    padding-bottom: 8px;
+    padding-top: 15px;
+}
+
+.text h2 {
+    margin-bottom: 10px;
+}
+
+.text h3{
+    margin-bottom: 10px;
+}
+
+/* Sizing */
+@media (max-width: 1100px){
+    .event1 {
+        display: none;
+    }
+
+    .column {
+        width: 100%;
+        margin-left: -50%;
+        padding: 0;
+    }
+
+    .pub2 {
+        display: none;
+    }
+    
+    .column-p {
+        width: 100%;
+        padding: 0;
+        margin-left: 28%;
+    }
+}
